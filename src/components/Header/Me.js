@@ -1,4 +1,4 @@
-import headshot from './headshot.jpg'
+import headshot from '../../images/headshot.jpg'
 
 export default function Me() {
     return (

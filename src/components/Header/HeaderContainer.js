@@ -4,7 +4,7 @@ import Me from './Me'
 
 export default function HeaderContainer() {
     return (
-        <header>
+        <header className='header_container' id='home'>
             <CTA />
             <Me />
         </header>

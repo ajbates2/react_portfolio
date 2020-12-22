@@ -7,8 +7,9 @@ export default function NavMenu() {
     const [menu, openMenu] = useState(false)
 
     return (
-        <nav>
+        <nav className='nav_container'>
             <VscMenu
+                className='menu_button'
                 onClick={() => openMenu(!menu)}
             />
             { !menu

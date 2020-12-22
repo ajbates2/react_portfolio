@@ -1,14 +1,14 @@
 export default function CTA() {
     return (
-        <>
-            <h1>Hello! This is AJ Bates</h1>
+        <div className='header_cta'>
+            <h1>AJ Bates</h1>
             <h2>
-                I am an aspiring Web Develepor specializing in JavaScript, and Jquery.
+                Full-stack JavaScript developer 
                 <br /><br />
-                <a href='#contact-me'>
+                <a href='#contact-me' className='link_button'>
                     Get in touch
                 </a>
             </h2>
-        </>
+        </div>
     )
 }

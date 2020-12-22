@@ -10,7 +10,9 @@ export default function ProjectContainer() {
         return (
             <div key={i}>
                 <h2 className='project_title'>
-                    {app.name}
+                    <span>{`< `}</span>
+                    <span className='pink'>{app.name}</span>
+                    <span>{` />`}</span>
                 </h2>
                 <ProjectScreen
                     link={app.links.liveSite}
@@ -27,7 +29,7 @@ export default function ProjectContainer() {
     })
 
     return (
-        <section>
+        <section id='projects' className='project_container'>
             {block}
         </section>
     )

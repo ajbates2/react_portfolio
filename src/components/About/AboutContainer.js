@@ -1,6 +1,6 @@
 export default function AboutContainer() {
     return (
-        <section className='about-container'>
+        <section className='about-container' id='about-me'>
              <p className="technical-bio">
                 I am currently a student in the Full Stack Software Engineering program with
                  Thinkful. I am excited to continue learning and sharpening my skills as a web

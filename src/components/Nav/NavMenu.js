@@ -12,10 +12,9 @@ export default function NavMenu() {
                 className='menu_button'
                 onClick={() => openMenu(!menu)}
             />
-            { !menu
-                ? ''
-                : <NavList closeMenu={() => openMenu(!menu)} />
-            }
+            <NavList
+                menuState={menu}
+                closeMenu={() => openMenu(!menu)} />
         </nav>
     )
 }

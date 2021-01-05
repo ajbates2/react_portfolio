@@ -1,10 +1,28 @@
-export default function NavList() {
-    return (
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#about-me">About Me</a></li>
-            <li><a href="#contact-me">Contact Me</a></li>
-        </ul>
-    )
+import { useTrail, animated, config } from "react-spring";
+
+export default function NavList(prop) {
+  const list = [
+    <a href="#home">Home</a>,
+    <a href="#projects">Projects</a>,
+    <a href="#about-me">About Me</a>,
+    <a href="#contact-me">Contact Me</a>
+  ]
+
+  const trail = useTrail(list.length, {
+      position: 'relative',
+      right: !prop.menuState ? -300 : 0,
+      opacity: !prop.menuState ? 0 : 1,
+      config: config.stiff
+    });
+
+  return(
+  <ul className="nav_list">
+      {trail.map((props, i) => 
+          <animated.li key={i} style={props} className="nav_list_item" onClick={prop.closeMenu}>
+              {list[i]}
+          </animated.li>
+      )
+    }
+  </ul>
+  )
 }

@@ -1,16 +1,97 @@
 .header_container {
     padding: 0;
     display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 1000px;
+    width: 100vw;
+    overflow: hidden;
+    height: 100vh;
 }
 
 .headshot {
-    filter: drop-shadow(-8px 0px 25px #44475a);
+    filter: drop-shadow(-8px 0px 150px black);
     padding: 0;
-    margin: 0;
-    z-index: 0;
+    margin-bottom: -10px;
+    height: 1000px;
+    overflow-x: hidden;
 }
 
 .headshot_container {
     padding: 0;
     margin: 0;
+    grid-column: 2 / span 3;
+    grid-row: 1;
+    justify-self: center;
+    align-self: flex-end;
+    z-index: -1;
+}
+
+.header_cta {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    align-self: center;
+    justify-self: center;
+}
+
+.my_name {
+    font-size: 100px;
+    font-style: italic;
+    font-weight: 900;
+    letter-spacing: -10px;
+    margin: 0;
+    filter: drop-shadow(17px 10px 25px black);
+    color: #ff5555;
+}
+
+.cta_link {
+    position: relative;
+    top: 20px;
+    background-color: #44475a;
+    color: #f8f8f2;
+}
+
+.cta_description {
+    color: #f1fa8c;
+    filter: drop-shadow(2px 1px 0px #282a36);
+    font-style: italic;
+    font-weight: 100;
+}
+
+.cta_icons {
+    font-size: x-large;
+}
+
+@media only screen and (max-width: 1000px) {
+    .cta_description {
+        width: 75%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .header_cta {
+        grid-column: 1 / span 3;
+        justify-self: center;
+        align-self: center;
+        text-align: center;
+        padding-top: 250px;
+        background-color: rgb(68, 71, 90, .8);
+        width: 100vw;
+        height: inherit;
+        backdrop-filter: blur(2px);
+    }
+
+    .headshot {
+        height: 100vh;
+    }
+
+    .cta_description {
+        width: 100%;
+    }
+    
+    .header_container {
+        grid-column: 1 / span 3;
+    }
+    .my_name {
+        font-size: 90px;
+    }
 }

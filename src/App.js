@@ -9,8 +9,10 @@ export default function App() {
     <div className="App">
       <NavMenu />
       <HeaderContainer />
-      <ProjectContainer />
-      <AboutContainer />
+      <main>
+        <ProjectContainer />
+        <AboutContainer />
+      </main>
       <FooterContainer />
     </div>
   );

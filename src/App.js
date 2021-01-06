@@ -10,8 +10,8 @@ export default function App() {
       <NavMenu />
       <HeaderContainer />
       <main>
-        <ProjectContainer />
         <AboutContainer />
+        <ProjectContainer />
       </main>
       <FooterContainer />
     </div>

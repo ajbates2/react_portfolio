@@ -33,6 +33,10 @@ a {
   color: inherit;
 }
 
+button {
+  border: none;
+}
+
 .link_button {
   background-size: 220%;
   box-shadow: 0 .2em .3em rgba(0, 0, 0, 0.15);

@@ -60,3 +60,13 @@ button {
   background-position: 0;
   color: #f8f8f2;
 }
+
+.current_line {
+  background-color: #44475a;
+  transition: all .2s ease-in-out;
+}
+
+.inactive {
+  background-color: #282a36;
+  transition: all .2s ease-in-out;
+}

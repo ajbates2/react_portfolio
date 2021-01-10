@@ -41,6 +41,7 @@
 
 .menu_button {
     font-size: xx-large;
+    margin-right: 15px;
 }
 
 .menu_button:hover {

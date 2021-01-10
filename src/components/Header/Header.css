@@ -2,8 +2,6 @@
     padding: 0;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    height: 1000px;
-    width: 100vw;
     overflow: hidden;
     height: 100vh;
 }
@@ -12,7 +10,7 @@
     filter: drop-shadow(-8px 0px 150px black);
     padding: 0;
     margin-bottom: -10px;
-    height: 1000px;
+    height: 750px;
     overflow-x: hidden;
 }
 
@@ -23,7 +21,6 @@
     grid-row: 1;
     justify-self: center;
     align-self: flex-end;
-    z-index: -1;
 }
 
 .header_cta {
@@ -31,6 +28,7 @@
     grid-row: 1;
     align-self: center;
     justify-self: center;
+    z-index: 1;
 }
 
 .my_name {
@@ -44,7 +42,6 @@
 }
 
 .cta_link {
-    background-color: #44475a;
     color: #f8f8f2;
     margin-bottom: 2px;
 }

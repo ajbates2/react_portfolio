@@ -1,4 +1,4 @@
-import { useTrail, animated, config } from "react-spring";
+import { useTrail, animated } from "react-spring";
 
 export default function NavList(prop) {
   const list = [

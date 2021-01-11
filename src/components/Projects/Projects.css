@@ -1,21 +1,68 @@
 .tech_icon {
-    font-size: 50px;
+    font-size: 40px;
     margin: 20px;
 }
 
-.pink {
-    color: #ff79c6;
+.cyan {
+    color: #8be9fd;
 }
 
 .project_container {
     z-index: 2;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto 1fr auto;
 }
 
 .project_title {
     margin: 0;
-    padding: 0;
+    padding-bottom: 50px;
+    grid-row: 1;
+}
+
+.project_screen_link {
+    width: auto;
+    grid-row: 2;
+    grid-column: 1;
+    place-self: center;
+}
+
+.project_bio {
+    grid-row: 2;
+    grid-column: 2;
+    place-self: center;
+    text-align: center;
+    line-height: 42px;
+    font-size: larger;
+    font-weight: 200;
+    font-style: italic;
+    padding: 0 50px;
+}
+
+.project_links {
+    grid-row: 3;
+    grid-column: 2;
+    place-self: center;
+    display: flex;
+}
+
+.project_link {
+    flex: 0 1 auto;
+    margin: 5px;
+}
+
+.project_tech {
+    grid-row: 3;
+    grid-column: 1;
+    place-self: center;
 }
 
 .project_screen {
-    width: 300px;
+    transition: .5s ease-in-out;
+}
+
+.project_screen:hover {
+    cursor: pointer;
+    filter: blur(3px);
 }

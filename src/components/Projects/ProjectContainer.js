@@ -7,10 +7,10 @@ import './Projects.css';
 export default function ProjectContainer(props) {
 	const block = STORE.map((app, i) => {
 		return (
-			<div key={i}>
+			<div key={i} className='project_container'>
 				<h2 className='project_title'>
 					<span>{`< `}</span>
-					<span className='pink'>{app.name}</span>
+					<span className='cyan'>{app.name}</span>
 					<span>{` />`}</span>
 				</h2>
 				<ProjectScreen
@@ -28,9 +28,9 @@ export default function ProjectContainer(props) {
 	return (
 		<section
 			id='projects'
-			className={`project_container ${props.background}`}
+			className={props.background}
 		>
-			{block[0]}
+			{block}
 		</section>
 	);
 }

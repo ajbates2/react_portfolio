@@ -20,7 +20,6 @@ export default function ProjectContainer(props) {
 				/>
 				<p className='project_bio'>{app.bio}</p>
 				<ProjectLinks links={app.links} />
-				<TechUsed tech={app.techUsed} />
 			</div>
 		);
 	});
@@ -28,7 +27,7 @@ export default function ProjectContainer(props) {
 	return (
 		<section
 			id='projects'
-			className={props.background}
+			className={`projects_container ${props.background}`}
 		>
 			{block}
 		</section>

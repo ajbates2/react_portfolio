@@ -71,7 +71,8 @@
     transition: .5s ease-in-out;
     border-radius: 10px;
     box-shadow: -4px 20px 36px 8px #282a36a1;
-    width: 500px
+    width: 500px;
+    height: 500px;
 }
 
 .project_screen:hover {
@@ -84,6 +85,7 @@
 @media only screen and (max-width: 1350px) {
     .project_screen {
         width: 300px;
+        height: 300px;
     }
 
     .project_screen_link {
@@ -121,6 +123,7 @@
     
     .project_screen {
         width: 500px;
+        height: 500px;
     }
 
     .project_bio {
@@ -137,7 +140,8 @@
 
 @media only screen and (max-width: 650px) {
     .project_screen, .project_screen_link {
-        width: 300px
+        width: 300px;
+        height: 300px;
     }
 
     .project_bio {
@@ -161,5 +165,6 @@
 @media only screen and (max-width: 350px) {
     .project_screen, .project_screen_link {
         width: 250px;
+        height: 250px;
     }
 }

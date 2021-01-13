@@ -1,7 +1,7 @@
-import SafeRes_screen from './images/SafeRes_screen.png';
-import tips_screen from './images/tips_screen.png';
-import bf_screen from './images/bfscreen.png';
-import quiz_screen from './images/quiz-screenshot.png';
+import SafeRes_screen from './images/SafeRes_screen.jpg';
+import tips_screen from './images/tips_screen.jpg';
+import bf_screen from './images/bfscreen.jpg';
+import quiz_screen from './images/quiz-screenshot.jpg';
 
 const STORE = [
 	{

@@ -10,7 +10,7 @@
     filter: drop-shadow(-8px 0px 150px black);
     padding: 0;
     margin-bottom: -10px;
-    height: 750px;
+    max-height: 100vh;
     overflow-x: hidden;
 }
 
@@ -90,7 +90,7 @@
         justify-self: center;
         align-self: center;
         text-align: center;
-        padding-top: 250px;
+        padding-top: 30vh;
         background-color: rgb(68, 71, 90, .8);
         width: 100vw;
         height: inherit;

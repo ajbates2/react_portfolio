@@ -1,7 +1,6 @@
 import STORE from '../../STORE';
 import ProjectLinks from './ProjectLinks';
 import ProjectScreen from './ProjectScreen';
-import TechUsed from './TechUsed';
 import './Projects.css';
 
 export default function ProjectContainer(props) {

@@ -38,6 +38,13 @@
 .tech_icon {
     font-size: 60px;
     filter: drop-shadow(2px 2px 3px #282a36);
+    transition: all .2s ease-out;
+}
+
+.tech_icon:hover {
+    transform: translateY(-2px);
+    color: #ff5555;
+    font-size: 65px;
 }
 
 .icon_pair {

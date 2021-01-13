@@ -1,6 +1,5 @@
 import { GrReactjs, GrNode } from 'react-icons/gr';
 import {
-	DiCode,
 	DiCss3,
 	DiGitBranch,
 	DiGithubAlt,

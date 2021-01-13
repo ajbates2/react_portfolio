@@ -42,6 +42,7 @@
 .tech_icon:hover {
     transform: translateY(-2px);
     color: #ff5555;
+    filter: drop-shadow(2px 4px 3px #1a1b21);
 }
 
 .icon_pair {

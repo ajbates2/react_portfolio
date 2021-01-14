@@ -68,7 +68,7 @@
 }
 
 .project_screen {
-    transition: .5s ease-in-out;
+    transition: .3s ease-in-out;
     border-radius: 10px;
     box-shadow: -4px 20px 36px 8px #282a36a1;
     width: 500px;
@@ -77,9 +77,8 @@
 
 .project_screen:hover {
     cursor: pointer;
-    box-shadow: 10px 10px 15px 0px #282a36;
-    filter: blur(1px);
-    transform: translateY(-2px);
+    box-shadow: -4px 25px 36px 8px #282a36a1;
+    transform: translateY(-5px);
 }
 
 @media only screen and (max-width: 1350px) {

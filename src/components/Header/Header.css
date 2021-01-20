@@ -12,9 +12,19 @@
     margin-bottom: -10px;
     max-height: 100vh;
     overflow-x: hidden;
-    animation: fadeInAnimation ease 2s;
+    animation: headshotFadeIn ease 1s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+}
+
+@keyframes headshotFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px)
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .headshot_container {
@@ -32,15 +42,15 @@
     align-self: center;
     justify-self: center;
     z-index: 1;
-    
+    animation: CTAFadeIn ease 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
 
-@keyframes fadeInAnimation {
+@keyframes CTAFadeIn {
     0% {
         opacity: 0;
-        transform: translateY(30px)
+        transform: translateY(-30px)
     }
     100% {
         opacity: 1;

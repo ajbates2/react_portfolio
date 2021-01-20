@@ -1,4 +1,4 @@
-import { IoIosBeer, IoIosCode } from 'react-icons/io';
+import { IoIosBeer } from 'react-icons/io';
 import { CgCodeSlash, CgMusicSpeaker } from 'react-icons/cg';
 import { GiCoffeeMug, GiConverseShoe } from 'react-icons/gi';
 

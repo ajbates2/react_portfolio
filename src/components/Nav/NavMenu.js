@@ -8,7 +8,11 @@ export default function NavMenu() {
 	return (
 		<nav className='nav_container'>
 			<button className='menu_button' onClick={() => openMenu(!menu)}>
-				<input className='menu_button__checkbox' type='checkbox' />
+				<input
+					className='menu_button__checkbox'
+					type='checkbox'
+					checked={menu}
+				/>
 				<span className='menu_button__bar'> </span>
 				<span className='menu_button__bar'> </span>
 				<span className='menu_button__bar'> </span>

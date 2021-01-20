@@ -12,6 +12,9 @@
     margin-bottom: -10px;
     max-height: 100vh;
     overflow-x: hidden;
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 .headshot_container {
@@ -29,6 +32,19 @@
     align-self: center;
     justify-self: center;
     z-index: 1;
+    
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(30px)
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .my_name {

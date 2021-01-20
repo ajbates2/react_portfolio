@@ -102,6 +102,14 @@
 
 .cta_icons {
     margin-right: 20px;
+    filter: drop-shadow(2px 2px 3px #282a36);
+    transition: all .2s ease-out;
+}
+
+.cta_icons:hover {
+    transform: translateY(-2px);
+    color: #8be9fd;
+    filter: drop-shadow(2px 4px 3px #1a1b21);
 }
 
 @media only screen and (max-width: 1000px) {

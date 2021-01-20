@@ -12,33 +12,45 @@ export default function FooterContainer() {
 		<footer id='contact-me'>
 			<h3 className='footer_title'>Contact Info</h3>
 			<address>
-				<a
-					href='mailto:aj.bates2.92@gmail.com'
-					target='_blank'
-					rel='noreferrer'
-					title='Email'
-				>
-					<IoMailSharp className='footer_icon' />
-				</a>
-				<a
-					href='https://www.linkedin.com/in/ajbates2/'
-					target='_blank'
-					rel='noreferrer'
-					title='LinkedIn Profile'
-				>
-					<IoLogoLinkedin className='footer_icon' />
-				</a>
-				<a
-					href='https://github.com/ajbates2'
-					target='_blank'
-					rel='noreferrer'
-					title='GitHub Profile'
-				>
-					<IoLogoGithub className='footer_icon' />
-				</a>
-				<a href={resume} type='resume/pdf' title='Resume' download>
-					<IoDocumentTextSharp className='footer_icon' />
-				</a>
+				<div className='footer_icon_pair'>
+					<a
+						href='mailto:aj.bates2.92@gmail.com'
+						target='_blank'
+						rel='noreferrer'
+						title='Email'
+					>
+						<IoMailSharp className='footer_icon' />
+					</a>
+					<aside>Email</aside>
+				</div>
+				<div className='footer_icon_pair'>
+					<a
+						href='https://www.linkedin.com/in/ajbates2/'
+						target='_blank'
+						rel='noreferrer'
+						title='LinkedIn Profile'
+					>
+						<IoLogoLinkedin className='footer_icon' />
+					</a>
+					<aside>LinkedIn</aside>
+				</div>
+				<div className='footer_icon_pair'>
+					<a
+						href='https://github.com/ajbates2'
+						target='_blank'
+						rel='noreferrer'
+						title='GitHub Profile'
+					>
+						<IoLogoGithub className='footer_icon' />
+					</a>
+					<aside>GitHub</aside>
+				</div>
+				<div className='footer_icon_pair'>
+					<a href={resume} type='resume/pdf' title='Resume' download>
+						<IoDocumentTextSharp className='footer_icon' />
+					</a>
+					<aside>Resume</aside>
+				</div>
 			</address>
 		</footer>
 	);

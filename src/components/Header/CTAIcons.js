@@ -6,11 +6,11 @@ export default function CTAIcons() {
 
 	return (
 		<p className='cta_icon_container'>
-			<IoIosBeer className='cta_icons' />
-			<GiCoffeeMug className='cta_icons' />
-			<CgMusicSpeaker className='cta_icons' />
-			<GiConverseShoe className='cta_icons' />
-			<CgCodeSlash className='cta_icons' />
+			<IoIosBeer className='cta_icons' title='I like beer'/>
+			<GiCoffeeMug className='cta_icons' title='I like coffee' />
+			<CgMusicSpeaker className='cta_icons' title='I like music' />
+			<GiConverseShoe className='cta_icons' title='I like shoes' />
+			<CgCodeSlash className='cta_icons' title='I like to code' />
 		</p>
 	);
 }

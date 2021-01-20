@@ -32,6 +32,17 @@ address {
     width: 75vw
 }
 
+.footer_icon_pair {
+    text-align: center;
+}
+
+.footer_icon_pair aside {
+    font-size: 12px;
+    font-weight: 200;
+    font-style: italic;
+    margin-top: 10px;
+}
+
 @media only screen and (max-width: 500px) {
     .footer_icon {
         font-size: 35px;

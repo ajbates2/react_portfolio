@@ -112,7 +112,7 @@
 }
 
 .air_max:hover {
-    fill: #ffb86c;
+    fill: #ff79c6;
 }
 
 .cta_icons:hover {
@@ -133,7 +133,7 @@
 }
 
 .code:hover {
-    color: #ff79c6;
+    color: #ffb86c;
 }
 
 @media only screen and (max-width: 1000px) {

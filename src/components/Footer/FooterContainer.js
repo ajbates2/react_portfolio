@@ -10,7 +10,7 @@ import resume from '../../AJ_Bates_Resume.pdf';
 export default function FooterContainer() {
 	return (
 		<footer id='contact-me'>
-			<h3 className='footer_title'>Contact Info</h3>
+			
 			<address>
 				<div className='footer_icon_pair'>
 					<a

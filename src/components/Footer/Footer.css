@@ -11,9 +11,8 @@
 }
 
 footer {
-    height: 500px;
+    height: 35vh;
     display: grid;
-    grid-template-rows: 1fr 2fr;
 }
 
 .footer_title {
@@ -46,5 +45,9 @@ address {
 @media only screen and (max-width: 500px) {
     .footer_icon {
         font-size: 35px;
+    }
+
+    footer {
+        height: 25vh
     }
 }

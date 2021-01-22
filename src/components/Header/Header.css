@@ -106,10 +106,34 @@
     transition: all .2s ease-out;
 }
 
+.air_max {
+    height: 2.3em;
+    width: 2.3em;
+}
+
+.air_max:hover {
+    fill: #ffb86c;
+}
+
 .cta_icons:hover {
     transform: translateY(-2px);
-    color: #8be9fd;
     filter: drop-shadow(2px 4px 3px #1a1b21);
+}
+
+.beer:hover {
+    color: #f1fa8c;
+}
+
+.coffee:hover {
+    color: #50fa7b;
+}
+
+.speaker:hover {
+    color:#bd93f9;
+}
+
+.code:hover {
+    color: #ff79c6;
 }
 
 @media only screen and (max-width: 1000px) {

@@ -5,12 +5,10 @@ import {
 	IoLogoLinkedin,
 	IoMailSharp,
 } from 'react-icons/io5';
-import resume from '../../AJ_Bates_Resume.pdf';
 
 export default function FooterContainer() {
 	return (
 		<footer id='contact-me'>
-			
 			<address>
 				<div className='footer_icon_pair'>
 					<a
@@ -46,7 +44,12 @@ export default function FooterContainer() {
 					<aside>GitHub</aside>
 				</div>
 				<div className='footer_icon_pair'>
-					<a href={resume} type='resume/pdf' title='Resume' download>
+					<a
+						href='/AJ_Bates_Resume.pdf'
+						type='resume/pdf'
+						title='Resume'
+						target='_blank'
+					>
 						<IoDocumentTextSharp className='footer_icon' />
 					</a>
 					<aside>Resume</aside>

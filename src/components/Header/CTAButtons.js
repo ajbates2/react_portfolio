@@ -1,5 +1,4 @@
 import { IoDocumentTextSharp } from 'react-icons/io5';
-import resume from '../../AJ_Bates_Resume.pdf';
 
 export default function CTAButtons() {
 	return (
@@ -8,10 +7,10 @@ export default function CTAButtons() {
 				<a href='#contact-me'>Let's talk!</a>
 			</button>
 			<a
-				href={resume}
+				href='/AJ_Bates_Resume.pdf'
 				type='resume/pdf'
 				title='resume'
-				download
+				target='_blank'
 			>
 				<IoDocumentTextSharp className='resume_link' />
 			</a>

@@ -11,6 +11,7 @@ export default function NavMenu() {
 				<input
 					className='menu_button__checkbox'
 					type='checkbox'
+					onChange={() => openMenu(!menu)}
 					checked={menu}
 				/>
 				<span className='menu_button__bar'> </span>

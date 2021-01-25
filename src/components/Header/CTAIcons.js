@@ -1,6 +1,6 @@
 import { IoIosBeer } from 'react-icons/io';
 import { CgCodeSlash, CgMusicSpeaker } from 'react-icons/cg';
-import { GiCoffeeMug, GiConverseShoe } from 'react-icons/gi';
+import { GiCoffeeMug } from 'react-icons/gi';
 import AirMax1 from '../../icons/AirMax1';
 
 export default function CTAIcons() {

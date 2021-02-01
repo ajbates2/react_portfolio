@@ -7,9 +7,14 @@ export default function NavMenu() {
 
 	return (
 		<nav className='nav_container'>
-			<button className='menu_button' onClick={() => openMenu(!menu)}>
+			<button
+				className='menu_button'
+				onClick={() => openMenu(!menu)}
+				aria-label='menu button'
+			>
 				<input
 					className='menu_button__checkbox'
+					aria-label='menu button checkbox'
 					type='checkbox'
 					onChange={() => openMenu(!menu)}
 					checked={menu}

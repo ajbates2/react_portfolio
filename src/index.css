@@ -8,6 +8,8 @@ html {
   font-family: 'Inter', sans-serif;
   color: #f8f8f2;
   scroll-behavior: smooth;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
 }
 
 @supports (font-variation-settings: normal) {

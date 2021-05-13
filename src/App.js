@@ -39,7 +39,7 @@ export default function App() {
 				background={activeEl === 'header' ? 'current_line' : 'inactive'}
 			/>
 			<Suspense fallback={<div>loading...</div>} >
-				<main>
+				<main className='main-container'>
 					<AboutContainer
 						background={
 							activeEl === 'about' ? 'current_line' : 'inactive'

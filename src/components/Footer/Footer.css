@@ -13,6 +13,7 @@
 footer {
     height: 35vh;
     display: grid;
+    scroll-snap-align: end;
 }
 
 .footer_title {

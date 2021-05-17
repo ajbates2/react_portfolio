@@ -1,23 +1,34 @@
-export default function AboutContainer() {
-    return (
-        <section className='about-container' id='about-me'>
-             <p className="technical-bio">
-                I am currently a student in the Full Stack Software Engineering program with
-                 Thinkful. I am excited to continue learning and sharpening my skills as a web
-                  developer and problem solver. I love problem solving and the constant
-                   challenges that are brought with learning JavaScript and all of the related
-                    tech.<br /><br /> Having worked in a restaurant and in the service industry for
-                     essentially my whole life, I work great in a team, and  especially
-                      great in high stress situations. I can't wait to work with a great team
-                       of programmers and developers to apply my knowledge to a different
-                        challenge everyday.
-            </p>
-            <p className="fun-bio">
-                My love for technology is what ultimately pushed me to get into web development.
-                 I enjoy video games (built multiple PC's), movies, and music. When I'm not
-                  coding you might find me bartending (I love beer), or going to see some live
-                   music. Just like every other millennial I collect vinyl and shoes.
-            </p>
-        </section>
-    )
+import './About.css';
+import TechBlock from './TechBlock';
+
+export default function AboutContainer(props) {
+	return (
+		<section
+			className={`about-container ${props.background}`}
+			id='about-me'
+		>
+			<div className={`tech_skills ${props.background}`}>
+				<TechBlock />
+			</div>
+			<div className={`about ${props.background}`}>
+				<div>
+				<p>
+					Having worked in a restaurant and in the service industry
+					for essentially my whole life, I work great in a team, and
+					especially great in high stress situations. I can't wait to
+					work with a great team of programmers and developers to
+					apply my knowledge to a different challenge everyday.
+				</p>
+				<p>
+					My love for technology is what ultimately pushed me to get
+					into web development. I enjoy video games (built multiple
+					PC's), movies, and music. When I'm not coding you might find
+					me bartending (I love beer), or going to see some live music
+					(whenever we're allowed). Just like every other millennial I
+					collect vinyl and shoes.
+				</p>
+				</div>
+			</div>
+		</section>
+	);
 }

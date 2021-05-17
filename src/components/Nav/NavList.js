@@ -1,10 +1,10 @@
-import { useTrail, animated, config } from "react-spring";
+import { useTrail, animated } from "react-spring";
 
 export default function NavList(prop) {
   const list = [
     <a href="#home">Home</a>,
-    <a href="#projects">Projects</a>,
     <a href="#about-me">About Me</a>,
+    <a href="#projects">Projects</a>,
     <a href="#contact-me">Contact Me</a>
   ]
 
@@ -12,7 +12,7 @@ export default function NavList(prop) {
       position: 'relative',
       right: !prop.menuState ? -300 : 0,
       opacity: !prop.menuState ? 0 : 1,
-      config: config.stiff
+      config: {mass: 1, tension: 345, friction: 40}
     });
 
   return(

@@ -151,8 +151,19 @@
         line-height: 35px;
     }
     .project_container {
-        padding: 100px 10px;
+        padding: 2rem;
         margin: 0 5vw;
+    }
+
+    .project_title {
+        margin: 1rem;
+        margin-left: 0;
+        padding: 0;
+    }
+
+    .projects_container {
+        padding: 2rem 0;
+        grid-gap: 2rem;
     }
 
     .project_links {
@@ -162,9 +173,16 @@
     }
 }
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 375px) {
     .project_screen, .project_screen_link {
         width: 250px;
         height: 250px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .project_screen, .project_screen_link {
+        width: 200px;
+        height: 200px;
     }
 }
